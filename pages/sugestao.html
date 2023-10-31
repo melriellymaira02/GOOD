@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  @media screen and (max-width:1800px) {
+  }
+    h1{
+        text-align: center;
+        padding: 60px;
+        color: #fff;
+     text-decoration: underline black;
+    
+     text-shadow:6px 17px 19px #CE5937 ;
+     
+    }
+.buttonge{ padding: 10px;
+     outline: none;
+     border: none;
+     background-color: black;
+     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    
+    }
+
+#frase-gerada{
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  font-size: 20px;
+  font-family: Arial;
+  color: #ffffff;
+  font-family: Arial;
+  text-decoration: underline;
+}
+.frase{
+    background: #ffffff;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+background-image: url('https://images.pexels.com/photos/2908984/pexels-photo-2908984.jpeg?auto=compress&cs=tinysrgb&w=1600');
+}
+img{
+    width: 300px;
+    height: 200px;
+    box-shadow: -8px -32px 100px 35px;}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+
+
+  }
+  
+  li {
+    display: inline;
+
+  }
+  a{
+    color: aliceblue;
+    font-size: 20px;
+  }
+  .btn{
+  background:black;
+  height: 40px;
+  width: 200px;
+  display: flex;
+
+
+}
+.bu{
+  display:flex;
+  justify-content:flex-end;
+  color:white;
+  gap:10px 10px;
+flex-direction: row;
+padding: 40px;
+
+
+}
+  .livro{
+  width:200px;
+  height:200px;
+  background:#c6e9f0;
+  border-radius:100px;
+  box-shadow: -8px 17px 100px 24px; 
+display:flex;
+align-items:center;
+justify-content:center;
+
+
+}
+p{
+  font-size: 20px;
+}
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+
+    <div class="container mt-3"> </div>
+<body>
+
+
+    <h1>Sugestão de Livros</h1>
+<main class="livro">
+
+  <span style='font-size:100px;' alt="emoji de livro de capa azul">&#128214;</span>
+
+</main>
+<br>
+    <button onclick="gerarFrase()" class="buttonge"> <p>gerar Sugestão</p> </button>
+<p id="frase-gerada"></p>
+
+<main class="bu"> 
+  <button class="btn"> <a href="../pages/livros.html"> voltar</a></button>
+  <button class="btn"> <a href="../pages/quemsomos.html"> proximo</a></button>
+</main>
+
+
+<script>
+    let frases = [
+  'iracema',
+   'Tudo vai ficar bem',
+   'Amanha é um dia melhor que hoje.','Nada pode ser pior.'       
+];
+
+function gerarFrase(){
+    let frase = frases[
+      Math.floor(Math.random() *       
+      frases.length)
+    ]
+    
+    document.querySelector('#frase-gerada').textContent=frase;
+}
+</script>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+</body>
+</html>
