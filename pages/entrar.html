@@ -47,7 +47,9 @@ height: 300px;
     display: flex;
     text-decoration: underline;
  }
-
+nav{
+    background-color: black;
+}
   
 
 </style>
@@ -55,7 +57,7 @@ height: 300px;
     alert("bem vindo(a) ");
     alert("só será permitido o cadrasto de livros pela gestão.");
 </script>
-
+<nav>a</nav>
 
 <body>
     <div class="container mt-3">
@@ -76,18 +78,20 @@ height: 300px;
         
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" class="input">
-        
+        <button style="display: none;"></button>
         <input type="submit" value="Login" class="input">
+        <input type="submit" value="voltar" class="input">
+        
     </main>
      </form>
      </section>
 </body>
-<div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
+<main vw class="enabled">
+    <main vw-access-button class="active"></div>
+    <main vw-plugin-wrapper>
+      <main class="vw-plugin-top-wrapper"></main>
+    </main>
+</main>
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');

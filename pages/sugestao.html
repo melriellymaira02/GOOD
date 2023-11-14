@@ -31,14 +31,16 @@
     }
 
 #frase-gerada{
-  color: rgb(0, 0, 0);
+
   font-weight: 900;
-  font-size: 20px;
+  font-size: 35px;
   font-family: Arial;
   color: #ffffff;
   font-family: Arial;
-  text-decoration: underline;
-}
+  text-decoration: underline wavy;
+  color: #FFFFFF;
+
+text-shadow: #474747 3px 5px 2px;}
 .frase{
     background: #ffffff;
 }
@@ -103,14 +105,17 @@ justify-content:center;
 p{
   font-size: 20px;
 }
+
 button{
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 </style>
 
     <div class="container mt-3"> </div>
+
 <body>
 
 
@@ -132,9 +137,15 @@ button{
 
 <script>
     let frases = [
-  'iracema',
-   'Tudo vai ficar bem',
-   'Amanha é um dia melhor que hoje.','Nada pode ser pior.'       
+ '\u{1F4DA} A coruja -Aluisio Azevedo \u{1F4DA}',
+ ' \u{1F4DA} Coralline -Neil gaiman \u{1F4DA} ',
+ ' \u{1F4DA} Uma casa na campina  -Laura \u{1F4DA} ',
+ '\u{1F4DA} Iracema  -José de alencar \u{1F4DA}',
+ '\u{1F4DA} Sonho de uma noite de verão  -Willian shakespeare \u{1F4DA} ',
+ ' \u{1F4DA} Mar morto -Jorge Amado \u{1F4DA}',
+ '\u{1F4DA} Extraodinarias Mulheres que revolucionaram o Brasil -Duda Porto e Ariane Carro \u{1F4DA}',
+ '\u{1F4DA} Harry Potter e o calice de fogo -JK Rowling \u{1F4DA}'
+
 ];
 
 function gerarFrase(){

@@ -84,3 +84,8 @@ include_once('../principal/footer.php')
 <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
+<style>
+    body {
+        background-color: #c6e9f0;
+    }
+</style>

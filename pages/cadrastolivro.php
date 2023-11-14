@@ -28,9 +28,9 @@ if (isset($_POST['send'])) {
     $insertStmt->execute();
 
     if (move_uploaded_file($tempname, $folder)) {
-        echo "<h3> Image uploaded successfully!</h3>";
+        echo "<h3> Imagem enviada com sucesso!</h3>";
     } else {
-        echo "<h3> Failed to upload image!</h3>";
+        echo "<h3> Falha na imagem!</h3>";
     }
 } else {
     echo "<h3> </h3>";
@@ -49,43 +49,21 @@ include_once('../principal/header.php');
         padding: 30px;
     }
 
-    /* . form {
-
+    .navbar-brand {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        border-style: hidden;
-        background: rgb(55, 164, 207);
-        height: 500px;
-        box-shadow: 10px blue;
-        gap: 10px;
-
-
+        justify-content: flex-end;
     }
 
-    input {
-        height: 2em;
-        font-size: 15px;
+    nav {
+        background-color: black;
+        color: black;
     }
-
-    h1 {
-        text-decoration: underline;
-        text-align: center;
-    }
-
-    label {
-        font-size: 20px;
-        font-family: Arial;
-    }
-
-    button {
-        height: 3em;
-        width: 200px;
-    }
-    */
 </style>
-<h1 style="text-align:center; text-decoration:underline">Cadrasto De Livros:</h1>
+
+
+<!-- As a heading -->
+<nav>a</nav>
+<h1 style=" text-align:center; text-decoration:underline">Cadrasto De Livros:</h1>
 <div class="d-flex justify-content-center align-items-center  " style="background:rgb(55, 164, 207)">
     <div class="d-flex flex-column m-4 w-75 h-75 justify-content-center align-items-center ">
         <form action="" method="post" enctype="multipart/form-data" class="w-50">
@@ -122,7 +100,7 @@ include_once('../principal/header.php');
 
 
             <button type="submit" class="btn btn-primary my-3" name="send" style=" background:burlywood; color:black">cadastrar</button>
-            <a href="./entrar.html" class="btn btn-primary " style=" background:burlywood; color:black" role="button" aria-disabled="true">voltar</a>
+            <a href="./livros.html" class="btn btn-primary " style=" background:burlywood; color:black" role="button" aria-disabled="true">inicio</a>
 
         </form>
         <button type="button" class="btn btn-primary my-3" name="emprestados">
